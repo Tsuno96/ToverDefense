@@ -1,0 +1,5 @@
+sceneSetups:
+- path: D:/M2/IAM2/BoAuEt/Assets/Scenes/SampleScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
