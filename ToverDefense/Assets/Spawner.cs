@@ -13,12 +13,13 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        SetWave(new List<int>() { 0, 0, 0, 0 }, 2);
+        waveVirus = new List<Virus>();
+        SetWave(new List<int>() { 0, 1, poolVirus.Count, 2 }, 2);
         StartCoroutine("launchWave");
         /*Virus virus = poolVirus[0];
         virus.Initialise(GO_Chemin);
         Instantiate(virus);*/
+       
 
     }
 
@@ -35,18 +36,20 @@ public class Spawner : MonoBehaviour
     }
 
 
+
     IEnumerator launchWave()
     {
         foreach(int v in iVirusWave)
         {
-            if (true)
+            if (v >=0 && v<poolVirus.Count)
             {
                 Virus virus = poolVirus[v];
                 virus.Initialise(GO_Chemin);
                 waveVirus.Add(virus);
-                //Instantiate(waveVirus[waveVirus.Count -1]);
-                yield return new WaitForSeconds(cdWave);
+                Instantiate(virus);
+                
             }
+            yield return new WaitForSeconds(cdWave);
         }
 
 
