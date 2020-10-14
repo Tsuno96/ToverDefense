@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1738625098768698608}
   - component: {fileID: 1912268549586635930}
   - component: {fileID: 7041775647189302491}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5736701478154730933}
   - component: {fileID: 1115079394206278276}
   - component: {fileID: 1501085156207342958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 8437224846317852436}
   - component: {fileID: 3125398404399775082}
   - component: {fileID: 7637947102659090639}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Wing.L.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 2245941062073334893}
   - component: {fileID: 6839288740442821492}
   - component: {fileID: 8461028635430112084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Wing.L.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 656146756178952245}
   - component: {fileID: 2199764567182216852}
   - component: {fileID: 3477520384848974510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 4732085152036279549}
   - component: {fileID: 8594357008120905071}
   - component: {fileID: 7703250079720789451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Wing.U.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 2634541728944990501}
   - component: {fileID: 1820029916876261902}
   - component: {fileID: 3350752055029526652}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpyDrone_Wing.U.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8580756750433235951}
   - component: {fileID: 7865743786678088784}
-  m_Layer: 0
+  - component: {fileID: 5810840028595369902}
+  m_Layer: 9
   m_Name: SpyDrone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,4 +619,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GO_Chemin: {fileID: 0}
-  Speed: 5
+  Speed: 10
+  PV: 1
+  loot: 5
+  damage: 1
+--- !u!65 &5810840028595369902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8961926183372187989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008177421, y: 0.005851459, z: 0.0063763116}
+  m_Center: {x: 0.00019679457, y: -0.00000005811453, z: -0.0003722611}
